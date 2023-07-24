@@ -16,6 +16,8 @@ public class SimpleStreamApplication {
 	private static String STREAM_LOG_COPY = "stream_log_copy";
 
 	public static void main(String[] args) {
+		// 소스 프로세서, 싱크 프로세서로 이루어진 토폴로지를 스트림즈DSL로 구현
+		// 데이터를 처리하는 과정이 없음
 
 		Properties props = new Properties();
 		props.put(StreamsConfig.APPLICATION_ID_CONFIG, APPLICATION_NAME);
