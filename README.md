@@ -5,7 +5,7 @@
 ## 📌 [아파치 카프카 애플리케이션 프로그래밍 with 자바](https://product.kyobobook.co.kr/detail/S000001842177)
 
 ### kafka quick start
-- 핵심 내용 : 카프카 브로커 설정 및 실행, 주키퍼 실행, 명령어 사용(tpoics, producer, consumer 등)
+- 핵심 내용 : 카프카 브로커 설정 및 실행, 주키퍼 실행, 명령어 사용(topics, producer, consumer 등)
 - [study log](https://obtainable-poppyseed-72e.notion.site/2-57ed435bbf414a609628c45c89bd4227?pvs=4)
 - 트러블 슈팅 : 카프카 커맨드 라인 툴 실행 에러
 <br>
