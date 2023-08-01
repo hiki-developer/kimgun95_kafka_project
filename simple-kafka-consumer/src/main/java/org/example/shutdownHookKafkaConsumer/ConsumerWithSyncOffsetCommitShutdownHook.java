@@ -13,8 +13,8 @@ import org.apache.kafka.common.serialization.StringDeserializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ConsumerWithSyncOffsetCommit {
-	private final static Logger logger = LoggerFactory.getLogger(ConsumerWithSyncOffsetCommit.class);
+public class ConsumerWithSyncOffsetCommitShutdownHook {
+	private final static Logger logger = LoggerFactory.getLogger(ConsumerWithSyncOffsetCommitShutdownHook.class);
 	private final static String TOPIC_NAME = "test";
 	private final static String BOOTSTRAP_SERVERS = "my-kafka:9092";
 	private final static String GROUP_ID = "test-group";
