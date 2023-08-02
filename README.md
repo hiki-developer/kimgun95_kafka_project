@@ -16,6 +16,13 @@
 |<img src="https://github.com/hiki-developer/kimgun95_kafka_project/assets/54833128/92c39893-0446-46e4-adee-6ea54ff022b9" alt="에러2" width="900" height="100">|
 
 ---
-### kafka with JAVA (Basic)
-- 일자 : 
+### kafka client
+- 핵심 내용 : 프로듀서 API, 컨슈머 API, 어드민 API
+- [study log](https://obtainable-poppyseed-72e.notion.site/3-4-c663edfb5c6f45a385acfc12d95228d2?pvs=4)
+- 트러블 슈팅 : 로컬 윈도우 환경에서 kafka 서버 연결
 
+---
+### kafka streams
+- 핵심 내용 : 스트림즈DSL(KTable, KStream 등), 프로세서 API
+- [study log](https://obtainable-poppyseed-72e.notion.site/3-5-5932a49bbe3448d5b46d880831593e39?pvs=4)
+- 트러블 슈팅 : 코파티셔닝 되지 않은 KTable과 KStream 토픽의 join
