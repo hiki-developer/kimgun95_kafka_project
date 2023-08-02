@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    implementation 'org.apache.kafka:connect-api:2.5.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+}
+
+// 빌드된 파일을 jar로 압축하기 위함
+// 카프카 커넥트를 직접 개발하고 플러그인으로 커넥트에 추가할 때 주의할 점: 사용자가 직접 작성한 클래스 뿐만 아니라 참조하는라이브러리도 함께 빌드하여 jar로 압축해야 함
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
